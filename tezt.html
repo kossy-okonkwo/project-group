@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="tezt.css">
+</head>
+<body>
+<div class="head">
+  <div id="image">
+  <img src="images/logo.jpg" style="width: 45px; height: 45px">
+</div>
+<div class="theme">
+<h1>Yaba College Of Technology</h1>
+  <h4>Computer Technology Department</h4>
+</div>
+  <p class="Signup"><a href="#">Sign Up</a> <a href="#">Log In</a></p>
+</div>
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="#">lecture halls</a></li>
+      <li><a href="#">lecturers</a></li>
+      <li><a href="#">courses</a></li>
+      <li><a href="#">HOD</a></li>
+      <li><a href="#">Rector</a></li>
+      <li><a href="#">School Advisors</a></li>
+      <li><a href="#">Project Supervisors</a></li>
+      <li><a href="#">About the department</a></li>
+      <li><a href="cs.html">School time Tables</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <H1>WELCOME TO <br> YOUR <br> FAVOURITE DEPARTMENT</H1>
+  <P>we are the future of yabatech <br> we are the future of nigeria <br> we are the future of the</P>
+  
+  
+
+  </div>
+</div>
+<hr>
+<div class="language">
+  <p>language translation in</p>
+  <ul>
+    <li>Yoruba</li>
+    <li>Igbo</li>
+    <li>Housa</li>
+    <li>Pidgin</li>
+  </ul>
+</div>
+<hr>
+<div class="Blog">
+  <ul>
+    <li><a href="#"> Blog</a></li>
+    <li><a href="#">Privacy</a></li>
+    <li><a href="#">Terms</a></li>
+  </ul>
+</div>
+   <hr>
+   <ul>
+    <li><a href="#">Advertising</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  
+
+</div>
+<hr>
+<!-- copy wright-->
+<div>
+  
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
